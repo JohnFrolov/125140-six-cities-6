@@ -14,7 +14,9 @@
     "lint": "eslint src/ --ext .ts",
     "compile": "tsc -p tsconfig.json",
     "clean": "rimraf dist",
-    "ts": "ts-node"
+    "ts": "ts-node",
+    "docker:build": "docker build -t six-cities .",
+    "docker:run": "docker run -it six-cities"
   },
   "devDependencies": {
     "@types/node": "18.17.17",
